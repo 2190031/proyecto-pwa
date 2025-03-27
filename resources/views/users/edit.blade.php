@@ -32,7 +32,7 @@
                 <div class="flex flex-col">
                     <label class="font-bold" for="name">Name:</label>
                     <input required id="name" name="name" type="text" value="{{ $user->name }}"
-                        class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 ">
+                        class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0">
                     @if($errors->has('name'))
                         <div class="text-red-400">{{ $errors->first('name') }}</div>
                     @endif
@@ -40,7 +40,7 @@
                 <div class="flex flex-col">
                     <label class="font-bold" for="email">Email:</label>
                     <input required id="email" name="email" type="email" value="{{ $user->email }}"
-                        class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 ">
+                        class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0">
                     @if($errors->has('email'))
                         <div class="text-red-400">{{ $errors->first('email') }}</div>
                     @endif
@@ -48,7 +48,7 @@
                 <div class="flex flex-col">
                     <label class="font-bold" for="address">Address:</label>
                     <textarea required maxlength="255" id="address" name="address"
-                        class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 ">{{ $user->address }}</textarea>
+                        class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0">{{ $user->address }}</textarea>
                     @if($errors->has('address'))
                         <div class="text-red-400">{{ $errors->first('address') }}</div>
                     @endif
@@ -73,7 +73,7 @@
                 <div class="flex flex-col">
                     <label class="font-bold" for="password">Password:</label>
                     <input id="password" name="password" type="password"
-                        class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 ">
+                        class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0">
                     @if($errors->has('password'))
                         <div class="text-red-400">{{ $errors->first('password') }}</div>
                     @endif
@@ -81,7 +81,7 @@
                 <div class="flex flex-col">
                     <label class="font-bold" for="password_confirmation">Repeat assword:</label>
                     <input id="password_confirmation" name="password_confirmation" type="password"
-                        class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 ">
+                        class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0">
                     @if($errors->has('password_confirmation'))
                         <div class="text-red-400">{{ $errors->first('password_confirmation') }}</div>
                     @endif

@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="w-full">
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-row justify-between mb-6">
             <h1 class="text-2xl font-black">Products</h1>
             @if (auth()->user()->isadmin)
                 <a href="{{ route('products.create') }}"
@@ -65,7 +65,7 @@
                     <td>${{ $product->price }}</td>
                     <td>{{ $product->stock }}</td>
                     @if (auth()->user()->isadmin)
-                        <td class="flex flex-col font-bold text-indigo-500 md:gap-4 md:flex-row">
+                        <td class="font-bold text-indigo-500 *:px-2 md:flex-row">
                             <a href="{{ route('products.edit', $product->id) }}" class="">Edit</a>
                             <form action="{{ route('products.destroy', $product->id) }}" method="POST"
                                 style="display:inline;">

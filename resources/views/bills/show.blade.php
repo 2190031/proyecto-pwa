@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('content')
-<div class="max-w-4xl p-6 mx-auto rounded-lg shadow-lg">
+<div class="max-w-4xl p-6 mx-auto rounded-lg">
     <h2 class="mb-4 text-2xl font-bold">Bill #{{ $bill->id }}</h2>
     <h2 class="mb-4 text-xl font-bold">Order #{{ $bill->order->id }}</h2>
 
@@ -43,7 +43,6 @@
     <div class="flex mt-4 space-x-4">
         <a href="{{ route('bills.index') }}" class="px-4 py-2 text-white transition rounded hover:bg-white hover:text-black">Back</a>
         @if (auth()->user()->isadmin)
-            <a href="{{ route('bills.edit', $bill->id) }}" class="px-4 py-2 text-black transition bg-white rounded hover:text-white hover:bg-transparent">Edit</a>
             @if ($bill->order->status != "Cancelled")
                 <form class="ms-auto" action="{{ route('bills.cancel', $bill->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this order?');">
                     @csrf

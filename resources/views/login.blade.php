@@ -7,14 +7,14 @@
         <div class="flex flex-col justify-center mx-auto md:w-1/4">
             <div class="flex flex-col my-4">
                 <label class="font-bold" for="email">Email:</label>
-                <input required id="email" name="email" type="email" class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 ">
+                <input required id="email" name="email" type="email" class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0">
                 @if($errors->has('email'))
                     <div class="text-red-400">{{ $errors->first('password') }}</div>
                 @endif
             </div>
             <div class="flex flex-col my-4">
                 <label class="font-bold" for="password">Password:</label>
-                <input required id="password" name="password" type="password" class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 ">
+                <input required id="password" name="password" type="password" class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0">
                 @if($errors->has('password'))
                     <div class="text-red-400">{{ $errors->first('password') }}</div>
                 @endif

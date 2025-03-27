@@ -30,7 +30,7 @@
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 ">
                 <div class="flex flex-col">
                     <label class="font-bold" for="name">Name:</label>
-                    <input required id="name" name="name" type="text" value="{{ $category->name }}" class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 ">
+                    <input required id="name" name="name" type="text" value="{{ $category->name }}" class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0">
                 </div>
             </div>
         </form>

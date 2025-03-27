@@ -30,19 +30,19 @@
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 ">
                 <div class="flex flex-col">
                     <label class="font-bold" for="name">Name:</label>
-                    <input required id="name" name="name" type="text" value="{{ $product->name }}" class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 ">
+                    <input required id="name" name="name" type="text" value="{{ $product->name }}" class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0">
                 </div>
                 <div class="flex flex-col">
                     <label class="font-bold" for="description">Description:</label>
-                    <textarea required maxlength="255" id="description" name="description" class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 ">{{ $product->description }}</textarea>
+                    <textarea required maxlength="255" id="description" name="description" class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0">{{ $product->description }}</textarea>
                 </div>
                 <div class="flex flex-col">
                     <label class="font-bold" for="price">Price:</label>
-                    <input required id="price" name="price" type="number" value="{{ $product->price }}" class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 ">
+                    <input required id="price" name="price" type="number" value="{{ $product->price }}" class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0">
                 </div>
                 <div class="flex flex-col">
                     <label class="font-bold" for="stock">Stock:</label>
-                    <input required id="stock" name="stock" type="number" value="{{ $product->stock }}" class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 ">
+                    <input required id="stock" name="stock" type="number" value="{{ $product->stock }}" class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0">
                 </div>
                 <div class="flex flex-col">
                     <label class="font-bold" for="category_id">Category:</label>

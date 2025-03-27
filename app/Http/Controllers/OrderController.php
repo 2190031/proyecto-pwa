@@ -43,8 +43,8 @@ class OrderController extends Controller
                 'array',
                 'required',
 
-                ]
-            ]);
+            ]
+        ]);
 
         $cart = $request->cart;
         if (empty($cart)) {

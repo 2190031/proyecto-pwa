@@ -14,7 +14,7 @@
         <table class="w-full mt-3 table-auto">
             <thead>
                 <tr class="*:text-start">
-                    <th class="w-12">ID</th>
+                    <th class="w-12 text-center"></th>
                     <th>Customer</th>
                     <th>Date</th>
                     <th>Total Amount</th>
@@ -25,15 +25,14 @@
             <tbody>
                 @if (count($orders) > 0)
                     @foreach ($orders as $order)
-                        <tr class="transition hover:bg-white/5">
-                            <td class="w-12">{{ $order->id }}</td>
+                        <tr class="transition hover:bg-white/5 *:py-2">
+                            <td class="w-12 text-center">{{ $order->id }}</td>
                             <td>{{ $order->customer->name }}</td>
                             <td>{{ $order->date }}</td>
                             <td>${{ number_format($order->total_amount, 2) }}</td>
                             <td>{{ $order->status }}</td>
                             <td class="flex flex-col font-bold text-indigo-500 md:gap-4 md:flex-row">
                                 <a href="{{ route('orders.show', $order->id) }}" class="">View</a>
-                                <a href="{{ route('orders.edit', $order->id) }}" class="">Edit</a>
                                 @if ($order->status != "Paid")
 
                                     @if ($order->status != "Cancelled")

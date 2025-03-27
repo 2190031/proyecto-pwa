@@ -29,25 +29,25 @@
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 ">
                 <div class="flex flex-col">
                     <label class="font-bold" for="name">Name:</label>
-                    <input required id="name" name="name" type="text" class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 ">
+                    <input required id="name" name="name" type="text" class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0">
                 </div>
                 <div class="flex flex-col">
                     <label class="font-bold" for="description">Description:</label>
-                    <textarea required maxlength="255" id="description" name="description" class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 "></textarea>
+                    <textarea required maxlength="255" id="description" name="description" class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0"></textarea>
                 </div>
                 <div class="flex flex-col">
                     <label class="font-bold" for="price">Price:</label>
-                    <input required id="price" name="price" type="number" class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 ">
+                    <input required id="price" name="price" type="number" class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0 ">
                 </div>
                 <div class="flex flex-col">
                     <label class="font-bold" for="stock">Stock:</label>
-                    <input required id="stock" name="stock" type="number" class="p-2 px-4 transition-all border-b-white border border-[#0a0a0a] focus:border-white focus:rounded-lg outline-0 ">
+                    <input required id="stock" name="stock" type="number" class="p-2 px-4 transition-all border-b-white border-b border-white/10 focus:border focus:border-white focus:rounded-lg outline-0">
                 </div>
                 <div class="flex flex-col">
                     <label class="font-bold" for="category_id">Category:</label>
                     <select name="category_id" id="category_id" class="p-2 px-4 border rounded-lg">
                         @foreach ($categories as $category)
-                            <option value="{{ $category->id }}">{{ $category->name }}</option>
+                            <option class="text-black" value="{{ $category->id }}">{{ $category->name }}</option>
                         @endforeach
                     </select>
                 </div>
