@@ -6,8 +6,7 @@
     composer install
     npm install
 
-    php artisan migrate
-    php artisan db:seed --class=AdminUserSeeder
+    php artisan migrate --seed
 
     npm run dev
     php artisan serve
